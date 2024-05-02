@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ <title>GEST-ENSEIGNEMENT-UASZ</title>
+</head>
+
+<body>
+    <header>
+        <img src="#" alt="LOGO" />
+        <nav>
+			<ul>
+                <li><a href="index.html"><b>TABLEAU DE BORD</b></a></li>
+                <li><a href="deroulement.html"><b>DEROULEMENT</b></a></li>
+				<li><a href="emploidutemps.html"><b>EMPLOI DU TEMPS</b></a></li>
+                <li><a href="repartition.html"><b>REPARTITION</b></a></li>
+                <li><a href="#"><b>MAQUETTE</b></a>
+                    <div>
+						<ul>
+							<li><a href="groupe.html"><b>GROUPE</b></a></li>
+							<li><a href="classe.html"><b>CLASSE</b></a></li>
+							<li><a href="ec.html"><b>EC</b></a></li>
+							<li><a href="ue.html"><b>UE</b></a></li>
+						</ul>
+                    </div>
+                </li>
+				<li><a href="enseignant.html"><b>ENSEIGNANT</b></a></li>
+                <li><a href="salle.html"><b>SALLE</b></a></li>
+                <li><a href="deconnexion.html"><b>DECONNEXION</b></a></li>
+            </ul>
+        </nav>
+        <div></div>
+        <div></div>
+    </header>
+    <main>
+        <article>
+            <section>
+               	<div>
+            		<button id="bouton1">
+                    AJOUT ENSEIGNANT
+               		</button>
+            	</div> <br/>
+            </section>
+            <section>
+            	<div>
+                    <form name="formEnseignant" method="post" action="#">
+						<div>
+							<label>MATRICULE <font color="red">*</font></label>
+							<input type="text" id="inputMatricule" name="matricule" placeholder="Le matricule ici...">
+						</div>
+						<div>
+							<label>NOM <font color="red">*</font></label>
+							<input type="text" id="inputNom" name="nom" placeholder="Le nom ici...">
+						</div>
+						<div>
+							<label>PRENOM <font color="red">*</font></label>
+							<input type="text" id="inputPrenom" name="prenom" placeholder="Le prenom ici...">
+						</div>
+						<div>
+							<div><label>STATUS <font color="red">*</font></label></div>
+							<div id="status1">
+								<input type="checkbox" id="gridCheckstatus1" name="status1">
+								<label>PER</label>
+							</div>
+							<div id="status2">
+								<input type="checkbox" id="gridCheckstatus2" name="status2">
+								<label>VACATAIRE</label>
+							</div>
+						</div>
+						<div class="cacher" hidden="hidden">
+								<label>GRADE <font color="red">*</font></label>
+								<input type="text" id="grade" name="grade" placeholder="le grade ici...">
+						</div>
+						<div class="cacher" hidden="hidden">
+							<label>DEPARTEMENT <font color="red">*</font></label>
+							<input type="text" id="departement" name="departement" placeholder="le departement ici...">
+						</div>
+
+						<div>
+							<font color="red">Les champs qui ont (*) sont obligatoires</font>
+							</br><button type="button" >Fermer</button>
+							<button type="submit" name="btnEnregistrerEnseignant">Enregistrer</button>
+						</div>
+					</form>
+                </div>
+            </section>
+            <section>
+                <div>
+                   <table id="tab-exemple" border="1">
+						<thead>
+							<tr>
+								<th>MATRICULE</th>
+								<th>NOM</th>
+								<th>PRENOM</th>
+								<th>GROUPE</th>
+								<th>STATUS</th>
+								<th>GRADE</th>
+								<th>DEPARTEMENT </th>
+                                <th>OPERATION</th>
+								<th>ETAT</th>
+								<th>ACTIVER/DESACTIVER</th>
+
+							</tr>
+						</thead>
+                        <tfoot>
+							<tr>
+								<th>MATRICULE</th>
+								<th>NOM</th>
+								<th>PRENOM</th>
+								<th>GROUPE</th>
+								<th>STATUS</th>
+								<th>GRADE</th>
+								<th>DEPARTEMENT </th>
+                                <th>OPERATION</th>
+								<th>ETAT</th>
+								<th>ACTIVER/DESACTIVER</th>
+
+							</tr>
+						</tfoot>
+						<tbody>
+        					<tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+        						<td> 7 </td>
+                                <td> 8 </td>
+        						<td> 9 </td>
+        						<td> 10 </td>
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+        						<td> 7 </td>
+                                <td> 8 </td>
+        						<td> 9 </td>
+        						<td> 10 </td>
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+        						<td> 7 </td>
+                                <td> 8 </td>
+        						<td> 9 </td>
+        						<td> 10 </td>
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+        						<td> 7 </td>
+                                <td> 8 </td>
+        						<td> 9 </td>
+        						<td> 10 </td>
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+        						<td> 7 </td>
+                                <td> 8 </td>
+        						<td> 9 </td>
+        						<td> 10 </td>
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+        						<td> 7 </td>
+                                <td> 8 </td>
+        						<td> 9 </td>
+        						<td> 10 </td>
+        					</tr>
+                        </tbody>
+					</table>
+               </div>
+            </section>
+            <aside></aside>
+            <aside></aside>
+        </article>
+        <aside></aside>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#"><b>A PROPOS</b></a></li>
+                <li><a href="#"><b>CONTACT</b></a></li>
+            </ul>
+        </nav>
+        <div></div>
+        <div></div>
+    </footer>
+</body>
+
+</html>

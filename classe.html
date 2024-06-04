@@ -1,33 +1,38 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="en">
 
 <head>
- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"rel="stylesheet">
  <title>GEST-ENSEIGNEMENT-UASZ</title>
 </head>
 
 <body>
     <header>
-        <img src="#" alt="LOGO" />
+        <img src="images/logo.png" alt="LOGO" />
         <nav>
             <ul>
                 <li><a href="index.html"><b>TABLEAU DE BORD</b></a></li>
                 <li><a href="deroulement.html"><b>DEROULEMENT</b></a></li>
 				<li><a href="emploidutemps.html"><b>EMPLOI DU TEMPS</b></a></li>
                 <li><a href="repartition.html"><b>REPARTITION</b></a></li>
-                <li><a href="#"><b>MAQUETTE</b></a>
+                <li><a href="#"><b>PARAMETRES</b></a>
                     <div>
 						<ul>
 							<li><a href="groupe.html"><b>GROUPE</b></a></li>
 							<li><a href="classe.html"><b>CLASSE</b></a></li>
 							<li><a href="ec.html"><b>EC</b></a></li>
 							<li><a href="ue.html"><b>UE</b></a></li>
+							<li><a href="maquette.html"><b>MAQUETTE</b></a></li>
+							<li><a href="formation.html"><b>FORMATION</b></a></li>
+							<li><a href="enseignant.html"><b>ENSEIGNANT</b></a></li>
+							<li><a href="salle.html"><b>SALLE</b></a></li>
 						</ul>
                     </div>
                 </li>
-				<li><a href="enseignant.html"><b>ENSEIGNANT</b></a></li>
-                <li><a href="salle.html"><b>SALLE</b></a></li>
                 <li><a href="deconnexion.html"><b>DECONNEXION</b></a></li>
             </ul>
         </nav>
@@ -37,7 +42,7 @@
     <main>
         <article>
             <section>
-               	<div>
+               	<div class="btn">
             		<button id="bouton1">
                     AJOUT CLASSE
                		</button>
@@ -46,19 +51,29 @@
             <section>
             	<div>
                     <form name="formEnseignant" method="post" action="#">
-						<div>
+						<div class="form-group">
 							<label>MATRICULE <font color="red">*</font></label>
 							<input type="text" id="inputMatricule" name="matricule" placeholder="Le matricule ici...">
+							<i class="fas fa-exclamation-circle failure-icon" style="display: none;"></i>
+							<i class="far fa-check-circle success-icon" style="display: none;"></i>
+							<span class="error"></span>
 						</div>
-						<div>
+						<div class="form-group">
 							<label>NOM <font color="red">*</font></label>
 							<input type="text" id="inputNom" name="nom" placeholder="Le nom ici...">
+							<i class="fas fa-exclamation-circle failure-icon" style="display: none;"></i>
+							<i class="far fa-check-circle success-icon" style="display: none;"></i>
+							<span class="error"></span>
 						</div>
-						<div>
+						<div class="form-group">
 							<label>PRENOM <font color="red">*</font></label>
-							<input type="text" id="inputPrenom" name="prenom" placeholder="Le prenom ici...">
-						</div>
-						<div>
+							<input type="text" id="inputPrenom" name="prenom" placeholder="Le prénom ici...">
+							<i class="fas fa-exclamation-circle failure-icon" style="display: none;"></i>
+							<i class="far fa-check-circle success-icon" style="display: none;"></i>
+							<span class="error"></span>
+						</div>						
+						
+						<div class="status">
 							<div><label>STATUS <font color="red">*</font></label></div>
 							<div id="status1">
 								<input type="checkbox" id="gridCheckstatus1" name="status1">
@@ -203,14 +218,15 @@
     </main>
     <footer>
         <nav>
-            <ul>
-                <li><a href="#"><b>A PROPOS</b></a></li>
-                <li><a href="#"><b>CONTACT</b></a></li>
-            </ul>
+				<ul>
+					<li><a href="#"><b>A PROPOS</b></a></li>
+					<li><a href="#"><b>CONTACT</b></a></li>
+				</ul>
         </nav>
         <div></div>
         <div></div>
     </footer>
+	<script src="form.js"></script>
 </body>
 
 </html>

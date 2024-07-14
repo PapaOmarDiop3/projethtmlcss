@@ -1,24 +1,23 @@
 <!DOCTYPE HTML>
 
 <html lang="en">
-
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="style.css">
- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"rel="stylesheet">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
  <title>GEST-ENSEIGNEMENT-UASZ</title>
 </head>
 
-<body>
+<body class="emploidutemps">
     <header>
         <img src="images/logo.png" alt="LOGO" />
         <nav>
             <ul>
-                <li><a href="index.html"><b>TABLEAU DE BORD</b></a></li>
-                <li><a href="deroulement.html"><b>DEROULEMENT</b></a></li>
-				<li><a href="emploidutemps.html"><b>EMPLOI DU TEMPS</b></a></li>
-                <li><a href="repartition.html"><b>REPARTITION</b></a></li>
+                <li><a href="index.html"><i class="fas fa-tachometer-alt"></i> <b>TABLEAU DE BORD</b></a></li>
+                <li><a href="deroulement.html"><i class="fas fa-calendar-alt"></i> <b>DEROULEMENT</b></a></li>
+                <li><a href="emploidutemps.html"><i class="fas fa-clock"></i> <b>EMPLOI DU TEMPS</b></a></li>
+                <li><a href="repartition.html"><i class="fas fa-th-list"></i> <b>REPARTITION</b></a></li>
                 <li><a href="#"><b>PARAMETRES</b></a>
                     <div>
 						<ul>
@@ -101,132 +100,91 @@
 					</form>
                 </div>
             </section>
-            <section>
-                <div>
-                   <table id="tab-exemple" border="1">
-						<thead>
-							<tr>
-								<th>MATRICULE</th>
-								<th>NOM</th>
-								<th>PRENOM</th>
-								<th>GROUPE</th>
-								<th>STATUS</th>
-								<th>GRADE</th>
-								<th>DEPARTEMENT </th>
-                                <th>OPERATION</th>
-								<th>ETAT</th>
-								<th>ACTIVER/DESACTIVER</th>
-
-							</tr>
-						</thead>
-                        <tfoot>
-							<tr>
-								<th>MATRICULE</th>
-								<th>NOM</th>
-								<th>PRENOM</th>
-								<th>GROUPE</th>
-								<th>STATUS</th>
-								<th>GRADE</th>
-								<th>DEPARTEMENT </th>
-                                <th>OPERATION</th>
-								<th>ETAT</th>
-								<th>ACTIVER/DESACTIVER</th>
-
-							</tr>
-						</tfoot>
-						<tbody>
-        					<tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                            <tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                            <tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                            <tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                            <tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                            <tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                        </tbody>
-					</table>
-               </div>
-            </section>
-            <aside></aside>
-            <aside></aside>
-        </article>
-        <aside></aside>
+        <section>
+            <div>
+               <table id="tab-repartition" border="1">
+                    <thead>
+                        <tr>
+                            <th>CLASSE</th>
+                            <th>NIVEAU</th>
+                            <th>GROUPE</th>
+                            <th>ENSEIGNANT</th>
+                            <th>DISCIPLINE</th>
+                            <th>HEURES</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>CLASSE</th>
+                            <th>NIVEAU</th>
+                            <th>GROUPE</th>
+                            <th>ENSEIGNANT</th>
+                            <th>DISCIPLINE</th>
+                            <th>HEURES</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>Classe 1</td>
+                            <td>Niveau 1</td>
+                            <td>Groupe 1</td>
+                            <td>Enseignant 1</td>
+                            <td>Discipline 1</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Classe 2</td>
+                            <td>Niveau 2</td>
+                            <td>Groupe 2</td>
+                            <td>Enseignant 2</td>
+                            <td>Discipline 2</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Classe 3</td>
+                            <td>Niveau 3</td>
+                            <td>Groupe 3</td>
+                            <td>Enseignant 3</td>
+                            <td>Discipline 3</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>Classe 4</td>
+                            <td>Niveau 4</td>
+                            <td>Groupe 4</td>
+                            <td>Enseignant 4</td>
+                            <td>Discipline 4</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>Classe 5</td>
+                            <td>Niveau 5</td>
+                            <td>Groupe 5</td>
+                            <td>Enseignant 5</td>
+                            <td>Discipline 5</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <td>Classe 6</td>
+                            <td>Niveau 6</td>
+                            <td>Groupe 6</td>
+                            <td>Enseignant 6</td>
+                            <td>Discipline 6</td>
+                            <td>21</td>
+                        </tr>
+                    </tbody>
+                </table>
+           </div>
+        </section>
     </main>
     <footer>
         <nav>
-				<ul>
-					<li><a href="#"><b>A PROPOS</b></a></li>
-					<li><a href="#"><b>CONTACT</b></a></li>
-				</ul>
+			<ul>
+                <li><a href="#"><i class="fas fa-info-circle"></i> <b>A PROPOS</b></a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> <b>CONTACT</b></a></li>
+            </ul>
         </nav>
-        <div></div>
-        <div></div>
     </footer>
-	<script src="form.js"></script>
+    <script src="form.js"></script>
 </body>
-
 </html>

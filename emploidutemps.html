@@ -1,24 +1,23 @@
 <!DOCTYPE HTML>
 
 <html lang="en">
-
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="style.css">
- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"rel="stylesheet">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
  <title>GEST-ENSEIGNEMENT-UASZ</title>
 </head>
 
-<body>
+<body class="emploidutemps">
     <header>
         <img src="images/logo.png" alt="LOGO" />
         <nav>
             <ul>
-                <li><a href="index.html"><b>TABLEAU DE BORD</b></a></li>
-                <li><a href="deroulement.html"><b>DEROULEMENT</b></a></li>
-				<li><a href="emploidutemps.html"><b>EMPLOI DU TEMPS</b></a></li>
-                <li><a href="repartition.html"><b>REPARTITION</b></a></li>
+                <li><a href="index.html"><i class="fas fa-tachometer-alt"></i> <b>TABLEAU DE BORD</b></a></li>
+                <li><a href="deroulement.html"><i class="fas fa-calendar-alt"></i> <b>DEROULEMENT</b></a></li>
+                <li><a href="emploidutemps.html"><i class="fas fa-clock"></i> <b>EMPLOI DU TEMPS</b></a></li>
+                <li><a href="repartition.html"><i class="fas fa-th-list"></i> <b>REPARTITION</b></a></li>
                 <li><a href="#"><b>PARAMETRES</b></a>
                     <div>
 						<ul>
@@ -101,132 +100,90 @@
 					</form>
                 </div>
             </section>
-            <section>
-                <div>
-                   <table id="tab-exemple" border="1">
-						<thead>
-							<tr>
-								<th>MATRICULE</th>
-								<th>NOM</th>
-								<th>PRENOM</th>
-								<th>GROUPE</th>
-								<th>STATUS</th>
-								<th>GRADE</th>
-								<th>DEPARTEMENT </th>
-                                <th>OPERATION</th>
-								<th>ETAT</th>
-								<th>ACTIVER/DESACTIVER</th>
-
-							</tr>
-						</thead>
-                        <tfoot>
-							<tr>
-								<th>MATRICULE</th>
-								<th>NOM</th>
-								<th>PRENOM</th>
-								<th>GROUPE</th>
-								<th>STATUS</th>
-								<th>GRADE</th>
-								<th>DEPARTEMENT </th>
-                                <th>OPERATION</th>
-								<th>ETAT</th>
-								<th>ACTIVER/DESACTIVER</th>
-
-							</tr>
-						</tfoot>
-						<tbody>
-        					<tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                            <tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                            <tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                            <tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                            <tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                            <tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                        </tbody>
-					</table>
-               </div>
-            </section>
-            <aside></aside>
-            <aside></aside>
-        </article>
-        <aside></aside>
+        <section>
+            <div>
+               <table id="tab-emploidutemps" border="1">
+                    <thead>
+                        <tr>
+                            <th>HEURE</th>
+                            <th>LUNDI</th>
+                            <th>MARDI</th>
+                            <th>MERCREDI</th>
+                            <th>JEUDI</th>
+                            <th>VENDREDI</th>
+                            <th>SAMEDI</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>HEURE</th>
+                            <th>LUNDI</th>
+                            <th>MARDI</th>
+                            <th>MERCREDI</th>
+                            <th>JEUDI</th>
+                            <th>VENDREDI</th>
+                            <th>SAMEDI</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>08:00 - 10:00</td>
+                            <td>Cours 1</td>
+                            <td>Cours 2</td>
+                            <td>Cours 3</td>
+                            <td>Cours 4</td>
+                            <td>Cours 5</td>
+                            <td>Cours 6</td>
+                        </tr>
+                        <tr>
+                            <td>10:00 - 12:00</td>
+                            <td>Cours 7</td>
+                            <td>Cours 8</td>
+                            <td>Cours 9</td>
+                            <td>Cours 10</td>
+                            <td>Cours 11</td>
+                            <td>Cours 12</td>
+                        </tr>
+                        <tr>
+                            <td>12:00 - 14:00</td>
+                            <td>Pause déjeuner</td>
+                            <td>Pause déjeuner</td>
+                            <td>Pause déjeuner</td>
+                            <td>Pause déjeuner</td>
+                            <td>Pause déjeuner</td>
+                            <td>Pause déjeuner</td>
+                        </tr>
+                        <tr>
+                            <td>14:00 - 16:00</td>
+                            <td>Cours 13</td>
+                            <td>Cours 14</td>
+                            <td>Cours 15</td>
+                            <td>Cours 16</td>
+                            <td>Cours 17</td>
+                            <td>Cours 18</td>
+                        </tr>
+                        <tr>
+                            <td>16:00 - 18:00</td>
+                            <td>Cours 19</td>
+                            <td>Cours 20</td>
+                            <td>Cours 21</td>
+                            <td>Cours 22</td>
+                            <td>Cours 23</td>
+                            <td>Cours 24</td>
+                        </tr>
+                    </tbody>
+                </table>
+           </div>
+        </section>
     </main>
     <footer>
         <nav>
-				<ul>
-					<li><a href="#"><b>A PROPOS</b></a></li>
-					<li><a href="#"><b>CONTACT</b></a></li>
-				</ul>
+			<ul>
+                <li><a href="#"><i class="fas fa-info-circle"></i> <b>A PROPOS</b></a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> <b>CONTACT</b></a></li>
+            </ul>
         </nav>
-        <div></div>
-        <div></div>
     </footer>
-	<script src="form.js"></script>
+    <script src="form.js"></script>
 </body>
-
 </html>

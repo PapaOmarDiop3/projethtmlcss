@@ -1,24 +1,23 @@
 <!DOCTYPE HTML>
 
 <html lang="en">
-
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="style.css">
- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"rel="stylesheet">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
  <title>GEST-ENSEIGNEMENT-UASZ</title>
 </head>
 
-<body>
+<body class="emploidutemps">
     <header>
         <img src="images/logo.png" alt="LOGO" />
         <nav>
             <ul>
-                <li><a href="index.html"><b>TABLEAU DE BORD</b></a></li>
-                <li><a href="deroulement.html"><b>DEROULEMENT</b></a></li>
-				<li><a href="emploidutemps.html"><b>EMPLOI DU TEMPS</b></a></li>
-                <li><a href="repartition.html"><b>REPARTITION</b></a></li>
+                <li><a href="index.html"><i class="fas fa-tachometer-alt"></i> <b>TABLEAU DE BORD</b></a></li>
+                <li><a href="deroulement.html"><i class="fas fa-calendar-alt"></i> <b>DEROULEMENT</b></a></li>
+                <li><a href="emploidutemps.html"><i class="fas fa-clock"></i> <b>EMPLOI DU TEMPS</b></a></li>
+                <li><a href="repartition.html"><i class="fas fa-th-list"></i> <b>REPARTITION</b></a></li>
                 <li><a href="#"><b>PARAMETRES</b></a>
                     <div>
 						<ul>
@@ -36,197 +35,71 @@
                 <li><a href="deconnexion.html"><b>DECONNEXION</b></a></li>
             </ul>
         </nav>
-        <div></div>
-        <div></div>
     </header>
+
     <main>
         <article>
-            <section>
-               	<div class="btn">
-            		<button id="bouton1">
-                    AJOUT CLASSE
-               		</button>
-            	</div> <br/>
-            </section>
-            <section>
-            	<div>
-                    <form name="formEnseignant" method="post" action="#">
-						<div class="form-group">
-							<label>MATRICULE <font color="red">*</font></label>
-							<input type="text" id="inputMatricule" name="matricule" placeholder="Le matricule ici...">
-							<i class="fas fa-exclamation-circle failure-icon" style="display: none;"></i>
-							<i class="far fa-check-circle success-icon" style="display: none;"></i>
-							<span class="error"></span>
-						</div>
-						<div class="form-group">
-							<label>NOM <font color="red">*</font></label>
-							<input type="text" id="inputNom" name="nom" placeholder="Le nom ici...">
-							<i class="fas fa-exclamation-circle failure-icon" style="display: none;"></i>
-							<i class="far fa-check-circle success-icon" style="display: none;"></i>
-							<span class="error"></span>
-						</div>
-						<div class="form-group">
-							<label>PRENOM <font color="red">*</font></label>
-							<input type="text" id="inputPrenom" name="prenom" placeholder="Le prénom ici...">
-							<i class="fas fa-exclamation-circle failure-icon" style="display: none;"></i>
-							<i class="far fa-check-circle success-icon" style="display: none;"></i>
-							<span class="error"></span>
-						</div>						
-						
-						<div class="status">
-							<div><label>STATUS <font color="red">*</font></label></div>
-							<div id="status1">
-								<input type="checkbox" id="gridCheckstatus1" name="status1">
-								<label>PER</label>
-							</div>
-							<div id="status2">
-								<input type="checkbox" id="gridCheckstatus2" name="status2">
-								<label>VACATAIRE</label>
-							</div>
-						</div>
-						<div class="cacher" hidden="hidden">
-								<label>GRADE <font color="red">*</font></label>
-								<input type="text" id="grade" name="grade" placeholder="le grade ici...">
-						</div>
-						<div class="cacher" hidden="hidden">
-							<label>DEPARTEMENT <font color="red">*</font></label>
-							<input type="text" id="departement" name="departement" placeholder="le departement ici...">
-						</div>
+			<section>
+					<h1>Gestions des Classes</h1>
+			</section>
+		</article>
 
-						<div>
-							<font color="red">Les champs qui ont (*) sont obligatoires</font>
-							</br><button type="button" >Fermer</button>
-							<button type="submit" name="btnEnregistrerEnseignant">Enregistrer</button>
-						</div>
-					</form>
-                </div>
-            </section>
-            <section>
-                <div>
-                   <table id="tab-exemple" border="1">
-						<thead>
-							<tr>
-								<th>MATRICULE</th>
-								<th>NOM</th>
-								<th>PRENOM</th>
-								<th>GROUPE</th>
-								<th>STATUS</th>
-								<th>GRADE</th>
-								<th>DEPARTEMENT </th>
-                                <th>OPERATION</th>
-								<th>ETAT</th>
-								<th>ACTIVER/DESACTIVER</th>
+        <!-- Tableau pour afficher les classes -->
+        <table id="tab-exemple" border="1">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Année</th>
+                    <th>Département</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>Nom</th>
+                    <th>Année</th>
+                    <th>Département</th>
+                    <th>Actions</th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <!-- Les données seront chargées dynamiquement ici -->
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <!-- Exemple supplémentaire -->
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
 
-							</tr>
-						</thead>
-                        <tfoot>
-							<tr>
-								<th>MATRICULE</th>
-								<th>NOM</th>
-								<th>PRENOM</th>
-								<th>GROUPE</th>
-								<th>STATUS</th>
-								<th>GRADE</th>
-								<th>DEPARTEMENT </th>
-                                <th>OPERATION</th>
-								<th>ETAT</th>
-								<th>ACTIVER/DESACTIVER</th>
-
-							</tr>
-						</tfoot>
-						<tbody>
-        					<tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                            <tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                            <tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                            <tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                            <tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                            <tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                        </tbody>
-					</table>
-               </div>
-            </section>
-            <aside></aside>
-            <aside></aside>
-        </article>
-        <aside></aside>
+        <!-- Exemple de formulaire pour ajouter une classe -->
+        <form id="form-ajout-classe">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required><br><br>
+            
+            <label for="annee">Année:</label>
+            <input type="number" id="annee" name="annee" required><br><br>
+            
+            <label for="departement">Département:</label>
+            <input type="text" id="departement" name="departement" required><br><br>
+            
+            <label for="actions">Actions:</label>
+            <input type="text" id="actions" name="actions" required><br><br>
+            
+            <div class="btn">
+				<button id="bouton1">
+				AJOUTER
+					</button>
+			</div> <br/>
+        </form>
     </main>
-    <footer>
-        <nav>
-				<ul>
-					<li><a href="#"><b>A PROPOS</b></a></li>
-					<li><a href="#"><b>CONTACT</b></a></li>
-				</ul>
-        </nav>
-        <div></div>
-        <div></div>
-    </footer>
-	<script src="form.js"></script>
 </body>
-
 </html>

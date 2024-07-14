@@ -38,40 +38,32 @@
     </header>
     
     <main>
-		<article>
+        <article>
 			<section>
 					<h1>Gestions des Salles</h1>
 			</section>
 		</article>
 
-        <!-- Tableau pour afficher les groupes -->
+        <!-- Tableau pour afficher les EC -->
         <table id="tab-exemple" border="1">
             <thead>
                 <tr>
-                    <th>MATRICULE</th>
-                    <th>NOM</th>
-                    <th>PRENOM</th>
-                    <th>GROUPE</th>
-                    <th>STATUS</th>
-                    <th>GRADE</th>
-                    <th>DEPARTEMENT</th>
-                    <th>OPERATION</th>
-                    <th>ETAT</th>
-                    <th>ACTIVER/DESACTIVER</th>
+                    <th>Nom</th>
+                    <th>Code</th>
+                    <th>Crédits</th>
+                    <th>Responsable</th>
+                    <th>Département</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tfoot>
                 <tr>
-                    <th>MATRICULE</th>
-                    <th>NOM</th>
-                    <th>PRENOM</th>
-                    <th>GROUPE</th>
-                    <th>STATUS</th>
-                    <th>GRADE</th>
-                    <th>DEPARTEMENT</th>
-                    <th>OPERATION</th>
-                    <th>ETAT</th>
-                    <th>ACTIVER/DESACTIVER</th>
+                    <th>Nom</th>
+                    <th>Code</th>
+                    <th>Crédits</th>
+                    <th>Responsable</th>
+                    <th>Département</th>
+                    <th>Actions</th>
                 </tr>
             </tfoot>
             <tbody>
@@ -83,10 +75,6 @@
                     <td>4</td>
                     <td>5</td>
                     <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>10</td>
                 </tr>
                 <!-- Exemple supplémentaire -->
                 <tr>
@@ -96,42 +84,29 @@
                     <td>4</td>
                     <td>5</td>
                     <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>10</td>
                 </tr>
             </tbody>
         </table>
 
-        <!-- Exemple de formulaire pour ajouter un groupe -->
-        <form id="form-ajout-groupe">
+        <!-- Exemple de formulaire pour ajouter un EC -->
+        <form id="form-ajout-ec">
             <label for="nom">Nom:</label>
             <input type="text" id="nom" name="nom" required><br><br>
             
-            <label for="prenom">Prénom:</label>
-            <input type="text" id="prenom" name="prenom" required><br><br>
+            <label for="code">Code:</label>
+            <input type="text" id="code" name="code" required><br><br>
             
-            <label for="groupe">Groupe:</label>
-            <input type="text" id="groupe" name="groupe" required><br><br>
+            <label for="credits">Crédits:</label>
+            <input type="number" id="credits" name="credits" required><br><br>
             
-            <label for="status">Statut:</label>
-            <input type="text" id="status" name="status" required><br><br>
-            
-            <label for="grade">Grade:</label>
-            <input type="text" id="grade" name="grade" required><br><br>
+            <label for="responsable">Responsable:</label>
+            <input type="text" id="responsable" name="responsable" required><br><br>
             
             <label for="departement">Département:</label>
             <input type="text" id="departement" name="departement" required><br><br>
             
-            <label for="operation">Opération:</label>
-            <input type="text" id="operation" name="operation" required><br><br>
-            
-            <label for="etat">État:</label>
-            <input type="text" id="etat" name="etat" required><br><br>
-            
-            <label for="activer-desactiver">Activer/Désactiver:</label>
-            <input type="text" id="activer-desactiver" name="activer-desactiver" required><br><br>
+            <label for="actions">Actions:</label>
+            <input type="text" id="actions" name="actions" required><br><br>
             
             <div class="btn">
 				<button id="bouton1">

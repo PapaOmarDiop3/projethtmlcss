@@ -1,24 +1,23 @@
 <!DOCTYPE HTML>
 
 <html lang="en">
-
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="style.css">
- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"rel="stylesheet">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
  <title>GEST-ENSEIGNEMENT-UASZ</title>
 </head>
 
-<body>
+<body class="emploidutemps">
     <header>
         <img src="images/logo.png" alt="LOGO" />
         <nav>
             <ul>
-                <li><a href="index.html"><b>TABLEAU DE BORD</b></a></li>
-                <li><a href="deroulement.html"><b>DEROULEMENT</b></a></li>
-				<li><a href="emploidutemps.html"><b>EMPLOI DU TEMPS</b></a></li>
-                <li><a href="repartition.html"><b>REPARTITION</b></a></li>
+                <li><a href="index.html"><i class="fas fa-tachometer-alt"></i> <b>TABLEAU DE BORD</b></a></li>
+                <li><a href="deroulement.html"><i class="fas fa-calendar-alt"></i> <b>DEROULEMENT</b></a></li>
+                <li><a href="emploidutemps.html"><i class="fas fa-clock"></i> <b>EMPLOI DU TEMPS</b></a></li>
+                <li><a href="repartition.html"><i class="fas fa-th-list"></i> <b>REPARTITION</b></a></li>
                 <li><a href="#"><b>PARAMETRES</b></a>
                     <div>
 						<ul>
@@ -44,7 +43,7 @@
             <section>
                	<div class="btn">
             		<button id="bouton1">
-                    AJOUT DEROULEMENT
+                    AJOUT DEROULEMNT
                		</button>
             	</div> <br/>
             </section>
@@ -101,132 +100,75 @@
 					</form>
                 </div>
             </section>
-            <section>
-                <div>
-                   <table id="tab-exemple" border="1">
-						<thead>
-							<tr>
-								<th>MATRICULE</th>
-								<th>NOM</th>
-								<th>PRENOM</th>
-								<th>GROUPE</th>
-								<th>STATUS</th>
-								<th>GRADE</th>
-								<th>DEPARTEMENT </th>
-                                <th>OPERATION</th>
-								<th>ETAT</th>
-								<th>ACTIVER/DESACTIVER</th>
-
-							</tr>
-						</thead>
-                        <tfoot>
-							<tr>
-								<th>MATRICULE</th>
-								<th>NOM</th>
-								<th>PRENOM</th>
-								<th>GROUPE</th>
-								<th>STATUS</th>
-								<th>GRADE</th>
-								<th>DEPARTEMENT </th>
-                                <th>OPERATION</th>
-								<th>ETAT</th>
-								<th>ACTIVER/DESACTIVER</th>
-
-							</tr>
-						</tfoot>
-						<tbody>
-        					<tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                            <tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                            <tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                            <tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                            <tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                            <tr>
-        						<td> 1 </td>
-        						<td> 2 </td>
-        						<td> 3 </td>
-        						<td> 4 </td>
-        						<td> 5 </td>
-        						<td> 6 </td>
-        						<td> 7 </td>
-                                <td> 8 </td>
-        						<td> 9 </td>
-        						<td> 10 </td>
-        					</tr>
-                        </tbody>
-					</table>
-               </div>
-            </section>
-            <aside></aside>
-            <aside></aside>
-        </article>
-        <aside></aside>
+        <section>
+            <div>
+               <table id="tab-deroulement" border="1">
+                    <thead>
+                        <tr>
+                            <th>DATE</th>
+                            <th>ACTIVITÉ</th>
+                            <th>RESPONSABLE</th>
+                            <th>OBSERVATION</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>DATE</th>
+                            <th>ACTIVITÉ</th>
+                            <th>RESPONSABLE</th>
+                            <th>OBSERVATION</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>01/09/2024</td>
+                            <td>Inscription</td>
+                            <td>Admin</td>
+                            <td>À terminer d'ici 05/09</td>
+                        </tr>
+                        <tr>
+                            <td>06/09/2024</td>
+                            <td>Réunion enseignants</td>
+                            <td>Directeur</td>
+                            <td>Planification des cours</td>
+                        </tr>
+                        <tr>
+                            <td>10/09/2024</td>
+                            <td>Début des cours</td>
+                            <td>Tous les enseignants</td>
+                            <td>Premier semestre</td>
+                        </tr>
+                        <tr>
+                            <td>15/12/2024</td>
+                            <td>Examens mi-semestre</td>
+                            <td>Professeurs principaux</td>
+                            <td>Évaluation de mi-parcours</td>
+                        </tr>
+                        <tr>
+                            <td>01/02/2025</td>
+                            <td>Vacances d'hiver</td>
+                            <td>Administration</td>
+                            <td>Fin du premier semestre</td>
+                        </tr>
+                        <tr>
+                            <td>10/02/2025</td>
+                            <td>Reprise des cours</td>
+                            <td>Tous les enseignants</td>
+                            <td>Début du second semestre</td>
+                        </tr>
+                    </tbody>
+                </table>
+           </div>
+        </section>
     </main>
     <footer>
         <nav>
-				<ul>
-					<li><a href="#"><b>A PROPOS</b></a></li>
-					<li><a href="#"><b>CONTACT</b></a></li>
-				</ul>
+			<ul>
+                <li><a href="#"><i class="fas fa-info-circle"></i> <b>A PROPOS</b></a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> <b>CONTACT</b></a></li>
+            </ul>
         </nav>
-        <div></div>
-        <div></div>
     </footer>
-	<script src="form.js"></script>
+    <script src="form.js"></script>
 </body>
-
 </html>
